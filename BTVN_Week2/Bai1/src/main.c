@@ -6,19 +6,7 @@
 #define MA_NHOM "02"
 
 
-int string_equal(char *a, char *b)
-{
-    while (*a && *b)
-    {
-        if (*a != *b)
-            return 0;
 
-        a++;
-        b++;
-    }
-
-    return (*a == '\0' && *b == '\0');
-}
 
 
 int main(void)
