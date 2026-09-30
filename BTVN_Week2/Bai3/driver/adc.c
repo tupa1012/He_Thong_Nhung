@@ -15,8 +15,8 @@ void ADC_Init(void)
     ADC1->SMPR2 |= (0x7 << 0);
 
     /* Software trigger */
-    ADC1->CR2 |= (0x7 << 17);
-    ADC1->CR2 |= (1 << 20);
+    ADC1->CR2 |= (0x7 << 17); // SWTART = lệnh bằng phần mềm ( 111 ) 
+    ADC1->CR2 |= (1 << 20); // Bật chức năng trigger 
 
     /* ADC ON */
     ADC1->CR2 |= (1 << 0);
